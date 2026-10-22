@@ -23,7 +23,9 @@ function SkillsPreview() {
               <span className="skill-area__number">0{index + 1}</span>
               <Icon aria-hidden="true" size={25} strokeWidth={1.5} />
               <span className="skill-area__title">{title}</span>
-              <span className="skill-area__items">{items.join(' · ')}</span>
+              <span className="skill-area__items">
+                {items.map((item) => item.name).join(' · ')}
+              </span>
               <ArrowUpRight className="skill-area__arrow" aria-hidden="true" size={18} />
             </a>
           ))}
