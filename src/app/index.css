@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-background: #f8f9fa;
+  --color-text: #1d2432;
+  --color-primary: #2b374a;
+  --color-secondary: #64748b;
+  --color-accent: #0077ff;
+  --color-surface: #fff;
+  --color-button-primary: #0066dd;
+  --color-button-hover: #2b374a;
+  --color-success-bg: #e2f0d9;
+  --color-success-text: #385723;
+  --color-error-bg: #fce4d6;
+  --color-error-text: #c00000;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  color: var(--color-text);
+  background: var(--color-background);
+  font: 400 16px/1.6 var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-padding-top: 96px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
