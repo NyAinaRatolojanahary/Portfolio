@@ -1,16 +1,27 @@
-# React + Vite
+# Portfolio de Ny Aina
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec React, Vite et JavaScript. Les fonctionnalités sont organisées par domaine dans `src/features/`; l’application, le routage et les layouts partagés se trouvent dans `src/app/`.
 
-Currently, two official plugins are available:
+## Démarrage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+## Commandes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `npm run dev` : démarre le serveur local.
+- `npm run lint` : vérifie le code avec ESLint.
+- `npm run build` : génère le site dans `dist/`.
+- `npm run preview` : prévisualise le build.
 
-## Expanding the ESLint configuration
+## Organisation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/app/` : point d’entrée, providers, routeur, routes et layouts.
+- `src/features/` : pages et composants organisés par domaine (`home`, `skills`, `projects`, `contact`).
+- `src/components/` : composants partagés, dont le header et le footer.
+- `src/assets/` : ressources importées par le code, dont les images du portfolio.
+- `public/` : ressources statiques accessibles par URL.
+
+Les dossiers suivent uniquement les besoins actuels de la V1; les structures dédiées à l’authentification, au tableau de bord, aux stores et aux tests seront ajoutées si le périmètre évolue.
