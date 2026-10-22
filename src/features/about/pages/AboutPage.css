@@ -1,0 +1,380 @@
+.about-page {
+  color: var(--color-text);
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  gap: clamp(56px, 9vw, 132px);
+  padding-block: 100px 112px;
+}
+
+.about-intro__heading h1 {
+  max-width: 670px;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.about-scroll-link,
+.about-inline-link {
+  width: fit-content;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--color-button-primary);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-scroll-link {
+  margin-top: 28px;
+}
+
+.about-intro__copy {
+  align-self: end;
+  padding-bottom: 4px;
+}
+
+.about-intro__copy p {
+  margin: 0 0 18px;
+  color: #536071;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.about-intro__copy .about-intro__lead {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.about-section-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.about-section-heading .eyebrow {
+  margin-bottom: 15px;
+}
+
+.about-section-heading h2,
+.about-outlook h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.about-experience {
+  padding-block: 84px 96px;
+  background: #eef2f5;
+}
+
+.experience-list {
+  border-top: 1px solid rgb(43 55 74 / 18%);
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 48px minmax(200px, 0.72fr) minmax(0, 1.28fr);
+  gap: 28px;
+  padding-block: 32px;
+  border-bottom: 1px solid rgb(43 55 74 / 18%);
+}
+
+.experience-item__index {
+  padding-top: 4px;
+  color: var(--color-button-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.experience-item__period,
+.education-item__period {
+  margin: 0 0 10px;
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.experience-item h3,
+.education-item h3,
+.academic-project h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.experience-item__organization,
+.education-item__institution {
+  margin: 6px 0 0;
+  color: var(--color-secondary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.experience-item__detail > p,
+.academic-project__detail > p {
+  margin: 0;
+  color: #4c5667;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.experience-item__detail > ul:not(.about-tags) {
+  display: grid;
+  gap: 9px;
+  margin: 16px 0 0;
+  padding-left: 19px;
+  color: #536071;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.experience-item__detail > ul:not(.about-tags) li::marker {
+  color: var(--color-accent);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-tags li {
+  padding: 5px 9px;
+  border: 1px solid rgb(43 55 74 / 15%);
+  border-radius: 4px;
+  color: var(--color-primary);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.about-education {
+  padding-block: 96px 104px;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgb(43 55 74 / 18%);
+}
+
+.education-item {
+  padding: 25px 28px 20px 0;
+}
+
+.education-item + .education-item {
+  padding-left: 28px;
+  border-left: 1px solid rgb(43 55 74 / 18%);
+}
+
+.education-item__focus {
+  margin: 17px 0 0;
+  color: #536071;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.about-projects {
+  padding-block: 84px 96px;
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.about-projects .about-section-heading h2 {
+  color: var(--color-surface);
+}
+
+.about-projects .about-section-heading .eyebrow {
+  color: rgb(255 255 255 / 68%);
+}
+
+.about-projects .about-section-heading .eyebrow > span {
+  background: #91c6ff;
+}
+
+.about-section-heading__note {
+  margin: 12px 0 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 13px;
+}
+
+.academic-project-list {
+  border-top: 1px solid rgb(255 255 255 / 24%);
+}
+
+.academic-project {
+  display: grid;
+  grid-template-columns: 48px minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 28px;
+  padding-block: 30px;
+  border-bottom: 1px solid rgb(255 255 255 / 24%);
+}
+
+.academic-project__number {
+  color: #a9d2ff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.academic-project__context {
+  margin: 0 0 9px;
+  color: rgb(255 255 255 / 68%);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.academic-project h3 {
+  color: var(--color-surface);
+}
+
+.academic-project__detail > p {
+  color: rgb(255 255 255 / 82%);
+}
+
+.about-projects .about-tags li {
+  border-color: rgb(255 255 255 / 30%);
+  color: var(--color-surface);
+}
+
+.academic-project__link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #b8d9ff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.academic-project__link:hover {
+  color: var(--color-surface);
+}
+
+.academic-project__link:focus-visible {
+  outline: 3px solid #b8d9ff;
+  outline-offset: 3px;
+}
+
+.about-outlook {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1fr);
+  gap: 50px;
+  padding-block: 86px 100px;
+}
+
+.about-outlook > .eyebrow {
+  margin: 6px 0 0;
+}
+
+.about-outlook__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
+  align-items: start;
+  gap: 40px;
+}
+
+.about-outlook__content > p {
+  margin: 3px 0 0;
+  color: #536071;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 70px 76px;
+  }
+
+  .about-intro__heading h1 {
+    max-width: 660px;
+    font-size: 42px;
+  }
+
+  .about-intro__copy {
+    max-width: 620px;
+  }
+
+  .experience-item,
+  .academic-project {
+    grid-template-columns: 36px minmax(180px, 0.75fr) minmax(0, 1.25fr);
+    gap: 18px;
+  }
+
+  .about-outlook {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-intro,
+  .about-education,
+  .about-outlook {
+    padding-block: 60px 68px;
+  }
+
+  .about-intro__heading h1 {
+    font-size: 36px;
+  }
+
+  .about-section-heading h2,
+  .about-outlook h2 {
+    font-size: 30px;
+  }
+
+  .about-experience,
+  .about-projects {
+    padding-block: 64px 70px;
+  }
+
+  .experience-item,
+  .academic-project {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 14px;
+    padding-block: 25px;
+  }
+
+  .experience-item__detail,
+  .academic-project__detail {
+    grid-column: 2;
+  }
+
+  .education-list {
+    grid-template-columns: 1fr;
+  }
+
+  .education-item {
+    padding: 22px 0;
+  }
+
+  .education-item + .education-item {
+    padding-left: 0;
+    border-top: 1px solid rgb(43 55 74 / 18%);
+    border-left: 0;
+  }
+
+  .about-outlook__content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
