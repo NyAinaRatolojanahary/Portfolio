@@ -16,7 +16,7 @@ export const academicProjects = [
     ],
     technologies: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Docker'],
     contribution:
-      'Projet réalisé à deux contributeurs selon l’historique public du dépôt; les contributions individuelles ne sont pas détaillées dans sa documentation.',
+      'Projet réalisé à deux contributeurs; pour la pratique de MEAN.',
     githubUrl: 'https://github.com/NyAinaRatolojanahary/m1p13mean-Liantsiky-NyAina',
     visual: 'marketplace',
     visualLabel: 'Projet MEAN',
@@ -27,7 +27,7 @@ export const academicProjects = [
     id: 'identite-numerique',
     title: 'Madagasikara Nomerika',
     repositoryName: 'Electronic-National-Identity-Card',
-    context: 'Projet de Licence · Identité numérique',
+    context: 'Projet pratique en Licence · Identité numérique',
     summary:
       'Prototype d’identité numérique autour de trois domaines sensibles : santé, finance et foncier.',
     objective:
@@ -40,7 +40,7 @@ export const academicProjects = [
     ],
     technologies: ['Java', 'JSP', 'SQL', 'ASP.NET Core', 'Leaflet'],
     contribution:
-      'Projet de Licence en Informatique, option Web et Design; les sources publiques présentent plusieurs modules du prototype.',
+      'Projet de pratique en année Licence en Informatique, option Web et Design; les sources publiques présentent plusieurs modules du prototype.',
     githubUrl: 'https://github.com/NyAinaRatolojanahary/Electronic-National-Identity-Card',
     visual: 'identity',
     visualLabel: 'Prototype',
@@ -51,7 +51,7 @@ export const academicProjects = [
     id: 'ultimate-team-race',
     title: 'Ultimate Team Race',
     repositoryName: 'ULTIMATE-TEAM-RACE',
-    context: 'Projet académique · Gestion de course',
+    context: 'Projet académique d\'évaluation finale · Gestion de course',
     summary:
       'Application de suivi d’une course par étapes, avec points, pénalités et classements individuels et par équipe.',
     objective:
@@ -64,7 +64,7 @@ export const academicProjects = [
     ],
     technologies: ['Java', 'JSP', 'Servlets', 'PL/pgSQL'],
     contribution:
-      'Projet académique individuel d’après le dépôt public; le code comprend des interfaces d’administration et d’équipe.',
+      'Projet académique individuel d\'évaluation finale; le code comprend des interfaces d’administration et d’équipe.',
     githubUrl: 'https://github.com/NyAinaRatolojanahary/ULTIMATE-TEAM-RACE',
     visual: 'race',
     visualLabel: 'Course par étapes',
