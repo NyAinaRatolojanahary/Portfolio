@@ -25,3 +25,13 @@ npm run dev
 - `public/` : ressources statiques accessibles par URL.
 
 Les dossiers suivent uniquement les besoins actuels de la V1; les structures dédiées à l’authentification, au tableau de bord, aux stores et aux tests seront ajoutées si le périmètre évolue.
+
+## Formulaire de contact
+
+Le formulaire utilise Formspree. Créez un formulaire dans votre compte Formspree, puis copiez son endpoint dans `.env` :
+
+```sh
+cp .env.example .env
+```
+
+Renseignez ensuite `VITE_FORMSPREE_ENDPOINT` avec l’URL Formspree, puis redémarrez Vite. Configurez la même variable dans l’environnement de déploiement. Le fichier `.env` local n’est pas suivi par Git.

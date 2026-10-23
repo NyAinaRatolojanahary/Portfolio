@@ -100,6 +100,7 @@ function ContactPage() {
       setStatus({
         type: 'error',
         message: 'Vérifiez les champs signalés avant l’envoi.',
+        showEmailLink: false,
       })
       return
     }
@@ -114,6 +115,7 @@ function ContactPage() {
       setStatus({
         type: 'error',
         message: 'Le formulaire n’est pas encore configuré. Vous pouvez m’écrire directement par e-mail.',
+        showEmailLink: true,
       })
       return
     }
@@ -135,6 +137,7 @@ function ContactPage() {
       setStatus({
         type: 'error',
         message: 'L’envoi a échoué. Réessayez ou contactez-moi directement par e-mail.',
+        showEmailLink: true,
       })
     } finally {
       setIsSubmitting(false)
@@ -281,7 +284,7 @@ function ContactPage() {
               {status && (
                 <p className={`contact-form__status contact-form__status--${status.type}`} role="status" aria-live="polite">
                   {status.message}{' '}
-                  {status.type === 'error' && !endpoint && (
+                  {status.showEmailLink && (
                     <a href={mailtoHref}>Écrire un e-mail</a>
                   )}
                 </p>
